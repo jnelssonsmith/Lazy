@@ -16,5 +16,7 @@ int main(int argc, char **argv){
         strcat(cmdArg, input);
         system(cmdArg);
         system("git push -u origin master");
+    } else if (strcmp(argv[1], "open") == 0){
+        system("atom .");
     }
 }
