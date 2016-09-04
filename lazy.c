@@ -17,8 +17,10 @@ int main(int argc, char **argv){
         system(cmdArg);
         system("git push -u origin master");
 
-    } else if (strcmp(argv[1], "open") == 0){
+    } else if (strcmp(argv[1], "dev") == 0){
         system("atom .");
+    } else if (strcmp(argv[1], "open") == 0){
+        system("open .");
     } else if (strcmp(argv[1], "timewaster") == 0){
         system("/usr/bin/open -a \"/Applications/Google Chrome.app\" 'http://facebook.com/' 'http://reddit.com' 'https://news.ycombinator.com/' 'https://github.com/' 'https://www.youtube.com/'");
     } else if (strcmp(argv[1], "study") == 0){
