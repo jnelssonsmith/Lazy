@@ -1,3 +1,4 @@
 language: C
 script: ./install.sh
 compiler: gcc
+sudo: required
