@@ -1,4 +1,4 @@
 language: C
-script: ./install.sh
+script: gcc -o lazy lazy.c
 compiler: gcc
 sudo: required
