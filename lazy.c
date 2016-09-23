@@ -3,6 +3,12 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+/**
+AUTHOR: Josh Nelsson-Smith
+STARTED:
+LAST UPDATED: 23/09/16
+**/
+
 int main(int argc, char **argv){
     char cmdArg[512];
     char input[256];
@@ -41,7 +47,7 @@ int main(int argc, char **argv){
                 }
                 printf("have a nice day! \n");
             } else {
-                //pass
+                printf("You didnt say the magic word...")
             }
         } else {
             printf("Im sorry cmd [%s] is not recognised\n", argv[1]);
