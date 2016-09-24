@@ -47,7 +47,7 @@ int main(int argc, char **argv){
                 }
                 printf("have a nice day! \n");
             } else {
-                printf("You didnt say the magic word...")
+                printf("You didnt say the magic word...");
             }
         } else {
             printf("Im sorry cmd [%s] is not recognised\n", argv[1]);
