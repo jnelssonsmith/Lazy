@@ -5,7 +5,7 @@
 
 /**
 AUTHOR: Josh Nelsson-Smith
-STARTED:
+STARTED: --
 LAST UPDATED: 23/09/16
 **/
 
@@ -38,7 +38,7 @@ int main(int argc, char **argv){
 
         } else if (strcmp(argv[1], "study") == 0){
             system("/usr/bin/open -a \"/Applications/Google Chrome.app\" 'https://my.monash.edu.au/' 'http://moodle.vle.monash.edu/my/' 'https://drive.google.com/drive/u/1/my-drive' 'https://mail.google.com/mail/u/1/#inbox'");
-            
+
         } else {
             printf("Im sorry cmd [%s] is not recognised\n", argv[1]);
         }
