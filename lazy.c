@@ -30,6 +30,12 @@ int main(int argc, char **argv){
         } else if (strcmp(argv[1], "dev") == 0){
             system("atom .");
 
+        } else if (strcmp(argv[1], "clone") == 0){
+            char str[80];
+            strcat(str, "git clone https://github.com/joshua-xavier/");
+            strcat(str, argv[2]);
+            system(str);
+
         } else if (strcmp(argv[1], "open") == 0){
             execlp("/usr/bin/open", "open", ".", NULL);
 
