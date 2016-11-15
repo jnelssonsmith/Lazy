@@ -2,4 +2,4 @@
 
 - Need to fix build for linux, some bug preventing proper execution?
 - Maybe should have a dynamic check for linux system?
-
+- git clone feature can be built out a little better to be based off username
