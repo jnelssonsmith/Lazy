@@ -5,8 +5,8 @@
 
 /**
 AUTHOR: Josh Nelsson-Smith
-STARTED: --
-LAST UPDATED: 23/09/16
+STARTED: Only god knows when (and git)
+LAST UPDATED: 04/12/16
 **/
 
 int main(int argc, char **argv){
@@ -28,7 +28,8 @@ int main(int argc, char **argv){
             system("git push -u origin master");
 
         } else if (strcmp(argv[1], "dev") == 0){
-            system("atom .");
+            //probs should code up some smarter check for which is fav editor
+            system("code .");
 
         } else if (strcmp(argv[1], "clone") == 0){
             char str[80];
@@ -38,7 +39,8 @@ int main(int argc, char **argv){
 
         } else if (strcmp(argv[1], "open") == 0){
             execlp("/usr/bin/open", "open", ".", NULL);
-
+       
+        // Are these really necessary? Really more of a gimmick if anything, dont really use
         } else if (strcmp(argv[1], "timewaster") == 0){
             system("/usr/bin/open -a \"/Applications/Google Chrome.app\" 'http://facebook.com/' 'http://reddit.com' 'https://news.ycombinator.com/' 'https://github.com/' 'https://www.youtube.com/'");
 
