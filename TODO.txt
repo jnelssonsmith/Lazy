@@ -4,3 +4,4 @@
 - Maybe should have a dynamic check for linux system?
 - git clone feature can be built out a little better to be based off username
 - should the system have some files to store user preferences? Like usernames and prefered editors?
+- open doesnt work on linux, other commands will need to be replaced
