@@ -47,12 +47,12 @@ int main(int argc, char **argv){
             system(str);
 
         } else if (strcmp(argv[1], "open") == 0){
-            if(strcmp(unameData.sysname, "Linux\n")){
+            if(strcmp(unameData.sysname, "Linux") == 0){
                 execlp("/usr/bin/nautilus", "nautilus", ".", NULL);
             } else {
                 execlp("/usr/bin/open", "open", ".", NULL);
             }
-            
+    
 
         } else {
             printf("Im sorry cmd [%s] is not recognised\n", argv[1]);
