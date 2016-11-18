@@ -57,7 +57,6 @@ int main(int argc, char **argv){
         } else {
             printf("Im sorry cmd [%s] is not recognised\n", argv[1]);
 
-            printf("%s", unameData.sysname);  
         }
     } else if (pChild > 0){
         wait(NULL);
