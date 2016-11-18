@@ -21,6 +21,7 @@ int main(int argc, char **argv){
     pChild = fork();
 
     if(pChild == 0){
+        uname(&unameData);
         if (strcmp(argv[1], "git") == 0){
             system("git add .");
             strcpy(cmdArg, "git commit -m ");
@@ -42,10 +43,19 @@ int main(int argc, char **argv){
             system(str);
 
         } else if (strcmp(argv[1], "open") == 0){
-            execlp("/usr/bin/open", "open", ".", NULL);
+            if(strcmp(unameData.sysname, "Linux\n")){
+                execlp("/usr/bin/nautilus", "nautilus", ".", NULL);
+                printf("made itblah");
+            } else {
+                execlp("/usr/bin/open", "open", ".", NULL);
+                printf("blah");
+            }
             
+
         } else {
             printf("Im sorry cmd [%s] is not recognised\n", argv[1]);
+
+            printf("%s", unameData.sysname);  
         }
     } else if (pChild > 0){
         wait(NULL);
