@@ -33,8 +33,12 @@ int main(int argc, char **argv){
             system("git push -u origin master");
 
         } else if (strcmp(argv[1], "dev") == 0){
-            //probs should code up some smarter check for which is fav editor
-            system("code .");
+            if(strcmp(unameData.sysname, "Linux\n")){
+                 system("code .");
+            } else {
+                system("atom ."); //because every mac user uses atom right?
+            }
+           
 
         } else if (strcmp(argv[1], "clone") == 0){
             char str[80];
