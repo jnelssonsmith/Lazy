@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <sys/utsname.h> //used for the uname cmd to check what type of system we are running on 
 
 /**
 AUTHOR: Josh Nelsson-Smith
@@ -15,6 +16,7 @@ int main(int argc, char **argv){
     char cmdArg[512];
     char input[256];
     pid_t pChild;
+    struct utsname unameData;
 
     pChild = fork();
 
