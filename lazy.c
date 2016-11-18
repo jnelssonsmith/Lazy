@@ -45,10 +45,8 @@ int main(int argc, char **argv){
         } else if (strcmp(argv[1], "open") == 0){
             if(strcmp(unameData.sysname, "Linux\n")){
                 execlp("/usr/bin/nautilus", "nautilus", ".", NULL);
-                printf("made itblah");
             } else {
                 execlp("/usr/bin/open", "open", ".", NULL);
-                printf("blah");
             }
             
 
