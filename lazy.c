@@ -38,12 +38,16 @@ int main(int argc, char **argv){
             } else {
                 system("atom ."); //because every mac user uses atom right?
             }
+        
+        } else if (strcmp(argv[1], "phonehome") == 0){
+            system("git fetch upstream && git rebase upstream/master");
            
 
         } else if (strcmp(argv[1], "clone") == 0){
             char str[80];
             strcat(str, "git clone https://github.com/joshua-xavier/");
             strcat(str, argv[2]);
+            printf("%s", str);
             system(str);
 
         } else if (strcmp(argv[1], "open") == 0){
